@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imeh's 27th Birthday - Peranakan Tea Party</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary-orange: #d14d28;
+        --primary-teal: #1a4d6e;
+        --bg-cream: #fdf7ed;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-cream);
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .peranakan-grid {
+        background-color: var(--bg-cream);
+        background-image: 
+          linear-gradient(rgba(209, 77, 40, 0.08) 1.5px, transparent 1.5px),
+          linear-gradient(90deg, rgba(209, 77, 40, 0.08) 1.5px, transparent 1.5px);
+        background-size: 50px 50px;
+        position: relative;
+        min-height: 100vh;
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .reveal {
+        animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+      .animate-float {
+        animation: float 5s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  </head>
+  <body class="peranakan-grid">
+    <div id="root">
+      <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; font-family:serif; color:#d14d28; text-align:center; padding: 20px;">
+        <div style="font-size: 60px; margin-bottom: 20px;" class="animate-float">🏮</div>
+        <div style="font-weight: bold; letter-spacing: 4px; font-size: 20px;">MEMBUKA UNDANGAN...</div>
+      </div>
+    </div>
+  </body>
+</html>
